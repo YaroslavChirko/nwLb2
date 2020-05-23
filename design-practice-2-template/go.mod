@@ -1,4 +1,4 @@
-module github.com/YaroslavChirko/design-practice-2-template
+module github.com/YaroslavChirko/nwLb2/design-practice-2-template
 
 go 1.14
 

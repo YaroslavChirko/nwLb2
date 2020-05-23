@@ -3,7 +3,7 @@ go_binary {
   name: "bood",
 
   // Go package to build.
-  pkg: "github.com/YaroslavChirko/nwLb2/design-practice-2-template/build/cmd/bood",
+  pkg: "github.com/YaroslavChirko/design-practice-2-template/build/cmd/bood",
 
   // Build inputs.
   srcs: ["**/*.go", "../go.mod"]

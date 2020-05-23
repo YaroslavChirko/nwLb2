@@ -1,0 +1,18 @@
+language: go
+
+go:
+  - "1.14"
+
+before_install:
+  - sudo apt-get update
+  - sudo apt-get -y install zip unzip wget
+  - sudo apt-get install golang-doc
+  - wget https://github.com/ninja-build/ninja/releases/download/v1.10.0/ninja-linux.zip
+  - sudo unzip ninja-linux.zip -d /usr/local/bin/
+  - sudo update-alternatives --install /usr/bin/ninja ninja /usr/local/bin/ninja 1 --force
+script:
+  - go get -u github.com/roman-mazur/bood/cmd/bood
+  - cd ./design-practice-2-template/build/
+  - bood
+  - cp ./instructions/bood_my/build.bood ./
+  - ./out/bin/bood

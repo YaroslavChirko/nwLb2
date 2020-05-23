@@ -14,5 +14,5 @@ script:
   - go get -u github.com/roman-mazur/bood/cmd/bood
   - cd ./design-practice-2-template/build/
   - bood
-  - cp ./instructions/bood_my/build.bood ./
+  - sudo cp ./instructions/bood_my/build.bood ./
   - ./out/bin/bood

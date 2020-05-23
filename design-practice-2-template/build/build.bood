@@ -3,20 +3,7 @@ go_binary {
   name: "bood",
 
   // Go package to build.
-  pkg: "github.com/YaroslavChirko/design-practice-2-template/build/cmd/bood",
-
-  //Go package to test
-  test: "github.com/YaroslavChirko/design-practice-2-template/build/godocmodule",
-  // Build inputs.
-  srcs: ["**/*.go", "../go.mod"]
-}
-
-godoc{
-  // Module (and output) name.
-  name: "my-docs",
-
-  // Go package to build.
-  pkg: "godocmodule",
+  pkg: "github.com/YaroslavChirko/nwLb2/design-practice-2-template/build/cmd/bood",
 
   // Build inputs.
   srcs: ["**/*.go", "../go.mod"]
